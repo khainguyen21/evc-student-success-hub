@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EVC Tutor Schedule</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header class="header">
+        <h1 class="header__title">EVC Tutor Schedule</h1>
+        <p class="header__subtitle">Find tutoring help for your courses</p>
+      </header>
+
+      <!-- Filter Section (Static for Phase 1) -->
+      <section class="filter">
+        <div class="filter__group">
+          <label class="filter__label" for="course-filter"
+            >Filter by Course</label
+          >
+          <select class="filter__select" id="course-filter">
+            <option value="">All Courses</option>
+            <option value="math">Math</option>
+            <option value="chemistry">Chemistry</option>
+            <option value="biology">Biology</option>
+            <option value="english">English</option>
+            <option value="computer-science">Computer Science</option>
+          </select>
+        </div>
+        <div class="filter__group">
+          <label class="filter__label" for="day-filter">Filter by Day</label>
+          <select class="filter__select" id="day-filter" disabled>
+            <option value="">All Days</option>
+            <option value="monday">Monday</option>
+            <option value="tuesday">Tuesday</option>
+            <option value="wednesday">Wednesday</option>
+            <option value="thursday">Thursday</option>
+            <option value="friday">Friday</option>
+          </select>
+        </div>
+        <p class="filter__note">Filters will be functional in Phase 4</p>
+      </section>
+
+      <!-- Schedule Sections -->
+      <main class="schedule">
+        <!-- Accounting -->
+        <section class="subject">
+          <h2 class="subject__title">Accounting</h2>
+          <div class="subject__cards">
+            <div class="tutor-card">
+              <div class="tutor-card__name">Thanh Tam Ngo</div>
+              <div class="tutor-card__subjects">Accounting 1A/B</div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Mon/Wed/Thurs</span>
+                  <span class="schedule-item__time">2:00 pm - 5:00 pm</span>
+                  <span class="schedule-item__location">LE-237</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Art -->
+        <section class="subject">
+          <h2 class="subject__title">Art</h2>
+          <div class="subject__cards">
+            <div class="tutor-card">
+              <div class="tutor-card__name">Angel Martinez</div>
+              <div class="tutor-card__subjects">Art 090</div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Mon</span>
+                  <span class="schedule-item__time">9:00 am - 10:30 am</span>
+                  <span class="schedule-item__location">LE-237</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Tues</span>
+                  <span class="schedule-item__time">9:00 am - 12:00 pm</span>
+                  <span class="schedule-item__location">LE-237</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Wed</span>
+                  <span class="schedule-item__time">12:15 pm - 2:15 pm</span>
+                  <span class="schedule-item__location">LE-237</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Thurs</span>
+                  <span class="schedule-item__time">9:00 am - 12:00 pm</span>
+                  <span class="schedule-item__location">LE-237</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Fri</span>
+                  <span class="schedule-item__time">9:00 am - 1:00 pm</span>
+                  <span class="schedule-item__location">LE-237</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Astronomy -->
+        <section class="subject">
+          <h2 class="subject__title">Astronomy</h2>
+          <p class="subject__note">
+            Math and Science Resource Center (MSRC), MS-112
+          </p>
+          <div class="subject__cards">
+            <div class="tutor-card tutor-card--professor">
+              <div class="tutor-card__name">Professor Rahbar</div>
+              <div class="tutor-card__subjects">Astronomy & Physics</div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Thurs</span>
+                  <span class="schedule-item__time">12:00 pm - 2:00 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Biology -->
+        <section class="subject">
+          <h2 class="subject__title">Biology</h2>
+          <p class="subject__note">Biology Skills Lab (BSL), SQ-231</p>
+          <div class="subject__cards">
+            <!-- Professors -->
+            <div class="tutor-card tutor-card--professor">
+              <div class="tutor-card__name">Professor Ernst</div>
+              <div class="tutor-card__subjects">Biology</div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Mon</span>
+                  <span class="schedule-item__time">12:15 pm - 1:15 pm</span>
+                  <span class="schedule-item__location">SQ-231</span>
+                </div>
+              </div>
+            </div>
+            <div class="tutor-card tutor-card--professor">
+              <div class="tutor-card__name">Professor Kurushima</div>
+              <div class="tutor-card__subjects">Biology</div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Mon</span>
+                  <span class="schedule-item__time">1:15 pm - 3:00 pm</span>
+                  <span class="schedule-item__location">SQ-231</span>
+                </div>
+              </div>
+            </div>
+            <div class="tutor-card tutor-card--professor">
+              <div class="tutor-card__name">Professor La</div>
+              <div class="tutor-card__subjects">Biology</div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Tues/Thurs</span>
+                  <span class="schedule-item__time">12:00 pm - 2:00 pm</span>
+                  <span class="schedule-item__location">SQ-231</span>
+                </div>
+              </div>
+            </div>
+            <div class="tutor-card tutor-card--professor">
+              <div class="tutor-card__name">Professor Pang</div>
+              <div class="tutor-card__subjects">Biology</div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Wed</span>
+                  <span class="schedule-item__time">12:30 pm - 2:00 pm</span>
+                  <span class="schedule-item__location">SQ-231</span>
+                </div>
+              </div>
+            </div>
+            <div class="tutor-card tutor-card--professor">
+              <div class="tutor-card__name">Professor Metzger</div>
+              <div class="tutor-card__subjects">Biology</div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Wed</span>
+                  <span class="schedule-item__time">2:00 pm - 3:00 pm</span>
+                  <span class="schedule-item__location">SQ-231</span>
+                </div>
+              </div>
+            </div>
+            <!-- Student Tutors -->
+            <div class="tutor-card">
+              <div class="tutor-card__name">Brandon Ong</div>
+              <div class="tutor-card__subjects">BIO 020, 021, 071</div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Wed</span>
+                  <span class="schedule-item__time">10:00 am - 3:00 pm</span>
+                  <span class="schedule-item__location">SQ-231</span>
+                </div>
+              </div>
+            </div>
+            <div class="tutor-card">
+              <div class="tutor-card__name">Katherine Dang</div>
+              <div class="tutor-card__subjects">BIO 020, 021, 071</div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Mon</span>
+                  <span class="schedule-item__time">10:00 am - 3:00 pm</span>
+                  <span class="schedule-item__location">SQ-231</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Fri</span>
+                  <span class="schedule-item__time">9:00 am - 1:00 pm</span>
+                  <span class="schedule-item__location">SQ-231</span>
+                </div>
+              </div>
+            </div>
+            <div class="tutor-card">
+              <div class="tutor-card__name">Gabriela Choy</div>
+              <div class="tutor-card__subjects">BIO 020, 021, 071</div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Tues/Thurs</span>
+                  <span class="schedule-item__time nowrap">10:00 am - 12:00 pm</span>
+                  <span class="schedule-item__location">SQ-231</span>
+                </div>
+              </div>
+            </div>
+            <div class="tutor-card">
+              <div class="tutor-card__name">Cao Le</div>
+              <div class="tutor-card__subjects">BIO 020, 021, 071</div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Tues</span>
+                  <span class="schedule-item__time">12:00 pm - 3:30 pm</span>
+                  <span class="schedule-item__location">SQ-231</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Chemistry -->
+        <section class="subject">
+          <h2 class="subject__title">Chemistry</h2>
+          <p class="subject__note">
+            Math and Science Resource Center (MSRC), MS-112
+          </p>
+          <div class="subject__cards">
+            <div class="tutor-card tutor-card--professor">
+              <div class="tutor-card__name">Professor Medina</div>
+              <div class="tutor-card__subjects">Chemistry</div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Tues</span>
+                  <span class="schedule-item__time nowrap">11:00 am - 12:00 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Thurs</span>
+                  <span class="schedule-item__time">2:00 pm - 3:00 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+              </div>
+            </div>
+            <div class="tutor-card tutor-card--professor">
+              <div class="tutor-card__name">Professor Bairu</div>
+              <div class="tutor-card__subjects">Chemistry</div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Tues</span>
+                  <span class="schedule-item__time">1:30 pm - 3:00 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+              </div>
+            </div>
+            <div class="tutor-card tutor-card--professor">
+              <div class="tutor-card__name">Professor Srinivasan</div>
+              <div class="tutor-card__subjects">Chemistry (Office Hours)</div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Wed</span>
+                  <span class="schedule-item__time">9:30 am - 11:00 am</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+              </div>
+            </div>
+            <div class="tutor-card">
+              <div class="tutor-card__name">Ngoc Le</div>
+              <div class="tutor-card__subjects">CHEM 015, 30A</div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Mon/Wed</span>
+                  <span class="schedule-item__time">4:00 pm - 8:00 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+              </div>
+            </div>
+            <div class="tutor-card">
+              <div class="tutor-card__name">Nhi Do</div>
+              <div class="tutor-card__subjects">CHEM 015, 30A, 1A/B</div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Mon</span>
+                  <span class="schedule-item__time">1:35 pm - 3:00 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Tues</span>
+                  <span class="schedule-item__time">5:30 pm - 7:00 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Fri</span>
+                  <span class="schedule-item__time">9:00 am - 1:00 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+              </div>
+            </div>
+            <div class="tutor-card">
+              <div class="tutor-card__name">Minh-Tam Le</div>
+              <div class="tutor-card__subjects">CHEM 015, 30A, 1A</div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Tues/Thurs</span>
+                  <span class="schedule-item__time">9:00 am - 12:00 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Computer Science -->
+        <section class="subject">
+          <h2 class="subject__title">Computer Science</h2>
+          <p class="subject__note">
+            Math and Science Resource Center (MSRC), MS-112
+          </p>
+          <div class="subject__cards">
+            <div class="tutor-card tutor-card--professor">
+              <div class="tutor-card__name">Professor Kang</div>
+              <div class="tutor-card__subjects">
+                Mathematics & Computer Science
+              </div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Mon</span>
+                  <span class="schedule-item__time nowrap">11:00 am - 12:00 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+              </div>
+            </div>
+            <div class="tutor-card tutor-card--professor">
+              <div class="tutor-card__name">Professor Jensen</div>
+              <div class="tutor-card__subjects">
+                Mathematics & Computer Science
+              </div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Mon/Wed</span>
+                  <span class="schedule-item__time">2:00 pm - 3:00 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Wed</span>
+                  <span class="schedule-item__time nowrap">11:00 am - 12:30 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+              </div>
+            </div>
+            <div class="tutor-card">
+              <div class="tutor-card__name">Murtaza Hussein</div>
+              <div class="tutor-card__subjects">COMSC 075</div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Mon</span>
+                  <span class="schedule-item__time">12:30 pm - 3:30 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Wed</span>
+                  <span class="schedule-item__time">9:00 am - 1:00 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+              </div>
+            </div>
+            <div class="tutor-card">
+              <div class="tutor-card__name">Hong-Khai Nguyen</div>
+              <div class="tutor-card__subjects">COMSC 028, 075, 076</div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Mon</span>
+                  <span class="schedule-item__time">9:45 am - 12:45 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+              </div>
+            </div>
+            <div class="tutor-card">
+              <div class="tutor-card__name">Ngoc-Han Tran</div>
+              <div class="tutor-card__subjects">COMSC 075, 076</div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Mon</span>
+                  <span class="schedule-item__time">3:00 pm - 6:00 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Tues</span>
+                  <span class="schedule-item__time">12:30 pm - 1:45 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Wed</span>
+                  <span class="schedule-item__time">1:00 pm - 5:00 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Thurs</span>
+                  <span class="schedule-item__time">
+                    <span class="nowrap">9:00 am - 10:30 am,</span>
+                    <span class="nowrap">11:30 am - 12:00 pm</span>
+                  </span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+              </div>
+            </div>
+            <div class="tutor-card">
+              <div class="tutor-card__name">Saumya Goswami</div>
+              <div class="tutor-card__subjects">COMSC 075, 076, 079C</div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Tues</span>
+                  <span class="schedule-item__time">9:00 am - 12:00 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- English/ESL -->
+        <section class="subject">
+          <h2 class="subject__title">English / ESL</h2>
+          <div class="subject__cards">
+            <div class="tutor-card">
+              <div class="tutor-card__name">Arthur Duong</div>
+              <div class="tutor-card__subjects">English 1A</div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Mon</span>
+                  <span class="schedule-item__time">11:00 am - 2:00 pm</span>
+                  <span class="schedule-item__location">LE-237</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Tues</span>
+                  <span class="schedule-item__time"
+                    >9:00 am - 1:00 pm, 2:00 pm - 5:00 pm</span
+                  >
+                  <span class="schedule-item__location">LE-237</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Wed</span>
+                  <span class="schedule-item__time">9:00 am - 5:00 pm</span>
+                  <span class="schedule-item__location">LE-237</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Thurs</span>
+                  <span class="schedule-item__time">9:00 am - 1:00 pm</span>
+                  <span class="schedule-item__location">LE-237</span>
+                </div>
+              </div>
+            </div>
+            <div class="tutor-card">
+              <div class="tutor-card__name">Quang Le</div>
+              <div class="tutor-card__subjects">English 1A</div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Mon</span>
+                  <span class="schedule-item__time"
+                    >9:00 am - 11:30 am, 2:30 pm - 5:00 pm</span
+                  >
+                  <span class="schedule-item__location">LE-237</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Thurs</span>
+                  <span class="schedule-item__time">3:00 pm - 5:00 pm</span>
+                  <span class="schedule-item__location">LE-237</span>
+                </div>
+              </div>
+            </div>
+            <div class="tutor-card">
+              <div class="tutor-card__name">Mia Delgadillo</div>
+              <div class="tutor-card__subjects">English 1A/B/C</div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Tues/Thurs</span>
+                  <span class="schedule-item__time">1:00 pm - 5:00 pm</span>
+                  <span class="schedule-item__location">LE-237</span>
+                </div>
+              </div>
+            </div>
+            <div class="tutor-card">
+              <div class="tutor-card__name">Angel Martinez</div>
+              <div class="tutor-card__subjects">English 1A</div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Mon</span>
+                  <span class="schedule-item__time">9:00 am - 10:30 am</span>
+                  <span class="schedule-item__location">LE-237</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Tues</span>
+                  <span class="schedule-item__time">9:00 am - 12:00 pm</span>
+                  <span class="schedule-item__location">LE-237</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Wed</span>
+                  <span class="schedule-item__time">12:15 pm - 2:15 pm</span>
+                  <span class="schedule-item__location">LE-237</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Thurs</span>
+                  <span class="schedule-item__time">9:00 am - 12:00 pm</span>
+                  <span class="schedule-item__location">LE-237</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Fri</span>
+                  <span class="schedule-item__time">9:00 am - 1:00 pm</span>
+                  <span class="schedule-item__location">LE-237</span>
+                </div>
+              </div>
+            </div>
+            <div class="tutor-card">
+              <div class="tutor-card__name">Nguyen Nguyen</div>
+              <div class="tutor-card__subjects">ESL</div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Tues/Thurs</span>
+                  <span class="schedule-item__time">1:00 pm - 3:00 pm</span>
+                  <span class="schedule-item__location">LE-237</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Wed</span>
+                  <span class="schedule-item__time">9:00 am - 10:30 am</span>
+                  <span class="schedule-item__location">LE-237</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Fri</span>
+                  <span class="schedule-item__time">9:00 am - 1:00 pm</span>
+                  <span class="schedule-item__location">LE-237</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- History -->
+        <section class="subject">
+          <h2 class="subject__title">History</h2>
+          <div class="subject__cards">
+            <div class="tutor-card">
+              <div class="tutor-card__name">Angel Martinez</div>
+              <div class="tutor-card__subjects">History 17A/B</div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Mon</span>
+                  <span class="schedule-item__time">9:00 am - 10:30 am</span>
+                  <span class="schedule-item__location">LE-237</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Tues</span>
+                  <span class="schedule-item__time">9:00 am - 12:00 pm</span>
+                  <span class="schedule-item__location">LE-237</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Wed</span>
+                  <span class="schedule-item__time">12:15 pm - 2:15 pm</span>
+                  <span class="schedule-item__location">LE-237</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Thurs</span>
+                  <span class="schedule-item__time">9:00 am - 12:00 pm</span>
+                  <span class="schedule-item__location">LE-237</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Fri</span>
+                  <span class="schedule-item__time">9:00 am - 1:00 pm</span>
+                  <span class="schedule-item__location">LE-237</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Math -->
+        <section class="subject">
+          <h2 class="subject__title">Math</h2>
+          <p class="subject__note">
+            Math and Science Resource Center (MSRC), MS-112
+          </p>
+          <div class="subject__cards">
+            <!-- Professors -->
+            <div class="tutor-card tutor-card--professor">
+              <div class="tutor-card__name">Professor Rahbar</div>
+              <div class="tutor-card__subjects">Astronomy & Physics</div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Thurs</span>
+                  <span class="schedule-item__time">12:00 pm - 2:00 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+              </div>
+            </div>
+            <div class="tutor-card tutor-card--professor">
+              <div class="tutor-card__name">Professor Kang</div>
+              <div class="tutor-card__subjects">
+                Mathematics & Computer Science
+              </div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Mon</span>
+                  <span class="schedule-item__time">11:00 am - 12:00 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+              </div>
+            </div>
+            <div class="tutor-card tutor-card--professor">
+              <div class="tutor-card__name">Professor Vu</div>
+              <div class="tutor-card__subjects">Mathematics</div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Mon</span>
+                  <span class="schedule-item__time">12:00 pm - 2:00 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+              </div>
+            </div>
+            <div class="tutor-card tutor-card--professor">
+              <div class="tutor-card__name">Professor Jensen</div>
+              <div class="tutor-card__subjects">
+                Mathematics & Computer Science
+              </div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Mon/Wed</span>
+                  <span class="schedule-item__time">2:00 pm - 3:00 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Wed</span>
+                  <span class="schedule-item__time">11:00 am - 12:30 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+              </div>
+            </div>
+            <div class="tutor-card tutor-card--professor">
+              <div class="tutor-card__name">Professor Sundaresan</div>
+              <div class="tutor-card__subjects">Mathematics</div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Tues</span>
+                  <span class="schedule-item__time">12:00 pm - 1:30 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Wed</span>
+                  <span class="schedule-item__time">12:30 pm - 2:00 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+              </div>
+            </div>
+            <!-- Staff -->
+            <div class="tutor-card tutor-card--staff">
+              <div class="tutor-card__name">Robert Yav</div>
+              <div class="tutor-card__role">
+                Math Instructional Assistant, Lab Lead
+              </div>
+              <div class="tutor-card__subjects">All Math, STAT C1000</div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Mon/Wed</span>
+                  <span class="schedule-item__time">1:00 pm - 8:00 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Tues/Thurs</span>
+                  <span class="schedule-item__time">5:00 pm - 8:00 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+              </div>
+            </div>
+            <div class="tutor-card tutor-card--staff">
+              <div class="tutor-card__name">Jorge Vallin</div>
+              <div class="tutor-card__role">Math Instructional Assistant</div>
+              <div class="tutor-card__subjects">
+                All Math up to MATH 072, STAT C1000
+              </div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Mon-Thurs</span>
+                  <span class="schedule-item__time">9:00 am - 6:00 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Fri</span>
+                  <span class="schedule-item__time">9:00 am - 1:00 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+              </div>
+            </div>
+            <div class="tutor-card tutor-card--staff">
+              <div class="tutor-card__name">Bryan Pham</div>
+              <div class="tutor-card__role">MSRC/Program Coordinator</div>
+              <div class="tutor-card__subjects">MATH, STAT C1000</div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Mon-Thurs</span>
+                  <span class="schedule-item__time">9:00 am - 6:00 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+              </div>
+            </div>
+            <!-- Student Tutors -->
+            <div class="tutor-card">
+              <div class="tutor-card__name">Nguyen Truong</div>
+              <div class="tutor-card__subjects">
+                MATH 062, 066, 067, 071, 072, 073
+              </div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Tues</span>
+                  <span class="schedule-item__time">2:45 pm - 4:45 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Thurs</span>
+                  <span class="schedule-item__time">3:45 pm - 4:45 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+              </div>
+            </div>
+            <div class="tutor-card">
+              <div class="tutor-card__name">Ngoc Quach</div>
+              <div class="tutor-card__subjects">
+                MATH 021, 022, 025, 062, 066, 071
+              </div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Mon</span>
+                  <span class="schedule-item__time">1:45 pm - 3:45 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Wed</span>
+                  <span class="schedule-item__time">12:45 pm - 3:45 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+              </div>
+            </div>
+            <div class="tutor-card">
+              <div class="tutor-card__name">Minh-Tam Le</div>
+              <div class="tutor-card__subjects">
+                MATH 020, 021, 022, 025, 062, 071
+              </div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Tues/Thurs</span>
+                  <span class="schedule-item__time">9:00 am - 12:00 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+              </div>
+            </div>
+            <div class="tutor-card">
+              <div class="tutor-card__name">Dang Doan</div>
+              <div class="tutor-card__subjects">
+                MATH 020, 021, 022, 025, STAT C1000, 066, 071
+              </div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Mon</span>
+                  <span class="schedule-item__time">9:00 am - 12:30 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Tues/Thurs</span>
+                  <span class="schedule-item__time">2:00 pm - 5:00 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Wed</span>
+                  <span class="schedule-item__time">9:00 am - 1:00 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+              </div>
+            </div>
+            <div class="tutor-card">
+              <div class="tutor-card__name">Ngoc Le</div>
+              <div class="tutor-card__subjects">
+                MATH 020, 021, 022, 025, 066/67, 071/72
+              </div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Mon/Wed</span>
+                  <span class="schedule-item__time">4:00 pm - 8:00 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+              </div>
+            </div>
+            <div class="tutor-card">
+              <div class="tutor-card__name">Nhi Do</div>
+              <div class="tutor-card__subjects">
+                MATH 020, 021, 022, 025, 066/71
+              </div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Mon</span>
+                  <span class="schedule-item__time">12:30 pm - 3:00 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Tues</span>
+                  <span class="schedule-item__time">5:30 pm - 7:00 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Fri</span>
+                  <span class="schedule-item__time">9:00 am - 1:00 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+              </div>
+            </div>
+            <div class="tutor-card">
+              <div class="tutor-card__name">Murtaza Hussein</div>
+              <div class="tutor-card__subjects">
+                MATH 020-025, 066/67, 071/72, 079
+              </div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Mon</span>
+                  <span class="schedule-item__time">12:30 pm - 3:30 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Wed</span>
+                  <span class="schedule-item__time">9:00 am - 1:00 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+              </div>
+            </div>
+            <div class="tutor-card">
+              <div class="tutor-card__name">Ngoc-Han Tran</div>
+              <div class="tutor-card__subjects">
+                MATH 020-025, 062, 066/67, 071/72/73
+              </div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Mon</span>
+                  <span class="schedule-item__time">3:00 pm - 6:00 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Tues</span>
+                  <span class="schedule-item__time">12:30 pm - 1:45 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Wed</span>
+                  <span class="schedule-item__time">1:00 pm - 5:00 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Thurs</span>
+                  <span class="schedule-item__time">
+                    <span class="nowrap">9:00 am - 10:30 am,</span>
+                    <span class="nowrap">11:30 am - 12:00 pm</span>
+                  </span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+              </div>
+            </div>
+            <div class="tutor-card">
+              <div class="tutor-card__name">Thu Van</div>
+              <div class="tutor-card__subjects">MATH STAT C1000</div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Tues/Thurs</span>
+                  <span class="schedule-item__time">4:00 pm - 8:00 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+              </div>
+            </div>
+            <div class="tutor-card">
+              <div class="tutor-card__name">Thanh-Dat Duong</div>
+              <div class="tutor-card__subjects">
+                MATH 020-025, 066/67, 071/72
+              </div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Tues/Thurs</span>
+                  <span class="schedule-item__time">4:00 pm - 8:00 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+              </div>
+            </div>
+            <div class="tutor-card">
+              <div class="tutor-card__name">Tuyen Pham</div>
+              <div class="tutor-card__subjects">MATH STAT C1000</div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Tues/Thurs</span>
+                  <span class="schedule-item__time">9:00 am - 11:30 am</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Wed</span>
+                  <span class="schedule-item__time">2:00 pm - 5:00 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Fri</span>
+                  <span class="schedule-item__time">9:00 am - 1:00 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+              </div>
+            </div>
+            <div class="tutor-card">
+              <div class="tutor-card__name">Saumya Goswami</div>
+              <div class="tutor-card__subjects">
+                MATH 062, 066/67, 071/72/73, 078, STATS C1000
+              </div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Tues</span>
+                  <span class="schedule-item__time">9:00 am - 12:00 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Music -->
+        <section class="subject">
+          <h2 class="subject__title">Music</h2>
+          <div class="subject__cards">
+            <div class="tutor-card">
+              <div class="tutor-card__name">Arthur Duong</div>
+              <div class="tutor-card__subjects">Music</div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Mon</span>
+                  <span class="schedule-item__time">11:00 am - 2:00 pm</span>
+                  <span class="schedule-item__location">LE-237</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Tues</span>
+                  <span class="schedule-item__time"
+                    >9:00 am - 1:00 pm, 2:00 pm - 5:00 pm</span
+                  >
+                  <span class="schedule-item__location">LE-237</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Wed</span>
+                  <span class="schedule-item__time">9:00 am - 5:00 pm</span>
+                  <span class="schedule-item__location">LE-237</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Thurs</span>
+                  <span class="schedule-item__time">9:00 am - 1:00 pm</span>
+                  <span class="schedule-item__location">LE-237</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Open Computer Lab -->
+        <section class="subject">
+          <h2 class="subject__title">Open Computer Lab</h2>
+          <div class="subject__cards">
+            <div class="tutor-card">
+              <div class="tutor-card__name">Hai Tran</div>
+              <div class="tutor-card__subjects">Open Computer Lab</div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Mon</span>
+                  <span class="schedule-item__time"
+                    >9:00 am - 11:45 am, 2:00 pm - 5:00 pm</span
+                  >
+                  <span class="schedule-item__location">LE-237</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Tues</span>
+                  <span class="schedule-item__time">9:00 am - 11:45 am</span>
+                  <span class="schedule-item__location">LE-237</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Wed</span>
+                  <span class="schedule-item__time">2:00 pm - 5:00 pm</span>
+                  <span class="schedule-item__location">LE-237</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Thurs</span>
+                  <span class="schedule-item__time">2:00 pm - 5:00 pm</span>
+                  <span class="schedule-item__location">LE-237</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Fri</span>
+                  <span class="schedule-item__time">9:00 am - 1:00 pm</span>
+                  <span class="schedule-item__location">LE-237</span>
+                </div>
+              </div>
+            </div>
+            <div class="tutor-card">
+              <div class="tutor-card__name">Kenya Reyes</div>
+              <div class="tutor-card__subjects">Open Computer Lab</div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Mon</span>
+                  <span class="schedule-item__time">11:45 am - 2:45 pm</span>
+                  <span class="schedule-item__location">LE-237</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Tues</span>
+                  <span class="schedule-item__time">3:30 pm - 5:00 pm</span>
+                  <span class="schedule-item__location">LE-237</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Wed</span>
+                  <span class="schedule-item__time">9:00 am - 2:00 pm</span>
+                  <span class="schedule-item__location">LE-237</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Thurs</span>
+                  <span class="schedule-item__time">3:30 pm - 5:00 pm</span>
+                  <span class="schedule-item__location">LE-237</span>
+                </div>
+              </div>
+            </div>
+            <div class="tutor-card">
+              <div class="tutor-card__name">Lexy Alvarado</div>
+              <div class="tutor-card__subjects">Open Computer Lab</div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Tues</span>
+                  <span class="schedule-item__time">
+                    <span class="nowrap">9:00 am - 12:00 pm,</span>
+                    <span class="nowrap">1:00 pm - 5:00 pm</span>
+                  </span>
+                  <span class="schedule-item__location">LE-237</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Thurs</span>
+                  <span class="schedule-item__time">9:00 am - 1:00 pm</span>
+                  <span class="schedule-item__location">LE-237</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Physics -->
+        <section class="subject">
+          <h2 class="subject__title">Physics</h2>
+          <p class="subject__note">
+            Math and Science Resource Center (MSRC), MS-112
+          </p>
+          <div class="subject__cards">
+            <div class="tutor-card tutor-card--professor">
+              <div class="tutor-card__name">Professor Rahbar</div>
+              <div class="tutor-card__subjects">Astronomy & Physics</div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Thurs</span>
+                  <span class="schedule-item__time">12:00 pm - 2:00 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+              </div>
+            </div>
+            <div class="tutor-card">
+              <div class="tutor-card__name">Nhi Do</div>
+              <div class="tutor-card__subjects">PHYSICS 2A/B</div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Mon</span>
+                  <span class="schedule-item__time">12:30 pm - 3:00 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Tues</span>
+                  <span class="schedule-item__time">5:30 pm - 7:00 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Fri</span>
+                  <span class="schedule-item__time">9:00 am - 1:00 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+              </div>
+            </div>
+            <div class="tutor-card">
+              <div class="tutor-card__name">Ngoc-Han Tran</div>
+              <div class="tutor-card__subjects">PHYSICS 7A</div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Mon</span>
+                  <span class="schedule-item__time">3:00 pm - 6:00 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Tues</span>
+                  <span class="schedule-item__time">12:30 pm - 1:45 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Wed</span>
+                  <span class="schedule-item__time">1:00 pm - 5:00 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Thurs</span>
+                  <span class="schedule-item__time">
+                    <span class="nowrap">9:00 am - 10:30 am,</span>
+                    <span class="nowrap">11:30 am - 12:00 pm</span>
+                  </span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+              </div>
+            </div>
+            <div class="tutor-card">
+              <div class="tutor-card__name">Saumya Goswami</div>
+              <div class="tutor-card__subjects">PHYSICS 7A/B</div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Tues</span>
+                  <span class="schedule-item__time">9:00 am - 12:00 pm</span>
+                  <span class="schedule-item__location">MS-112</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Psychology -->
+        <section class="subject">
+          <h2 class="subject__title">Psychology</h2>
+          <div class="subject__cards">
+            <div class="tutor-card">
+              <div class="tutor-card__name">Quang Le</div>
+              <div class="tutor-card__subjects">Psychology 1 and 92</div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Mon</span>
+                  <span class="schedule-item__time"
+                    >9:00 am - 11:30 am, 2:30 pm - 5:00 pm</span
+                  >
+                  <span class="schedule-item__location">LE-237</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Thurs</span>
+                  <span class="schedule-item__time">3:00 pm - 5:00 pm</span>
+                  <span class="schedule-item__location">LE-237</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Spanish -->
+        <section class="subject">
+          <h2 class="subject__title">Spanish</h2>
+          <div class="subject__cards">
+            <div class="tutor-card">
+              <div class="tutor-card__name">Angel Martinez</div>
+              <div class="tutor-card__subjects">Spanish</div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Mon</span>
+                  <span class="schedule-item__time">9:00 am - 10:30 am</span>
+                  <span class="schedule-item__location">LE-237</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Tues</span>
+                  <span class="schedule-item__time">9:00 am - 12:00 pm</span>
+                  <span class="schedule-item__location">LE-237</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Wed</span>
+                  <span class="schedule-item__time">12:15 pm - 2:15 pm</span>
+                  <span class="schedule-item__location">LE-237</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Thurs</span>
+                  <span class="schedule-item__time">9:00 am - 12:00 pm</span>
+                  <span class="schedule-item__location">LE-237</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Fri</span>
+                  <span class="schedule-item__time">9:00 am - 1:00 pm</span>
+                  <span class="schedule-item__location">LE-237</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Vietnamese -->
+        <section class="subject">
+          <h2 class="subject__title">Vietnamese</h2>
+          <div class="subject__cards">
+            <div class="tutor-card">
+              <div class="tutor-card__name">Arthur Duong</div>
+              <div class="tutor-card__subjects">Vietnamese</div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Mon</span>
+                  <span class="schedule-item__time">11:00 am - 2:00 pm</span>
+                  <span class="schedule-item__location">LE-237</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Tues</span>
+                  <span class="schedule-item__time"
+                    >9:00 am - 1:00 pm, 2:00 pm - 5:00 pm</span
+                  >
+                  <span class="schedule-item__location">LE-237</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Wed</span>
+                  <span class="schedule-item__time">9:00 am - 5:00 pm</span>
+                  <span class="schedule-item__location">LE-237</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-item__day">Thurs</span>
+                  <span class="schedule-item__time">9:00 am - 1:00 pm</span>
+                  <span class="schedule-item__location">LE-237</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <p>EVC Tutor Schedule &copy; 2024 | Built for students by a student</p>
+      </footer>
+    </div>
+  </body>
+</html>
