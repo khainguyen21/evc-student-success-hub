@@ -498,7 +498,7 @@ body {
 .subject__cards {
   display: grid;
   grid-template-columns: 1fr;
-  /* gap: 16px; */
+  gap: 7px;
   padding: 12px 0;
 }
 
@@ -766,16 +766,13 @@ body {
 /* ==========================================
    RESPONSIVE - Desktop (min-width: 1025px)
    ========================================== */
-@media (min-width: 1144px) {
+@media (min-width: 1157px) {
   .header { padding: 48px 24px; }
   .header__title { font-size: 2.25rem; }
   .header__subtitle { font-size: 1.15rem; }
   
   .header__logo {
     height: 90px;
-  }
-  
-  .header__logo-container {
   }
 
   .filter {
