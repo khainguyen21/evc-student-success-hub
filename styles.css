@@ -29,6 +29,16 @@
   --warning-accent: #d97706; /* Amber Amber */
   --success-accent: #16a34a; /* Garden Green */
 
+  /* Location Colors */
+  --loc-library-bg: #4f46e5;       /* Indigo for Library */
+  --loc-library-text: #ffffff;
+  --loc-msrc-bg: #0891b2;          /* Cyan for Math/Science */
+  --loc-msrc-text: #ffffff;
+  --loc-bio-bg: #16a34a;           /* Green for Biology */
+  --loc-bio-text: #ffffff;
+  --loc-online-bg: #7c3aed;        /* Violet for NetTutor */
+  --loc-online-text: #ffffff;
+
   /* Shadows & Effects (Using Greenish Tints) */
   --shadow-sm: 0 1px 2px 0 rgba(5, 150, 105, 0.05);
   --shadow-md: 0 4px 6px -1px rgba(5, 150, 105, 0.1),
@@ -69,6 +79,12 @@
   --text-primary: #f1f5f9; /* Off White */
   --text-secondary: #94a3b8; /* Muted Slate */
 
+  /* Location Colors Dark Mode */
+  --loc-library-bg: #6366f1;
+  --loc-msrc-bg: #06b6d4;
+  --loc-bio-bg: #22c55e;
+  --loc-online-bg: #8b5cf6;
+  
   /* Borders & Shadows */
   --border-color: #24352e; /* Deep Forest Border */
 
@@ -491,9 +507,83 @@ body {
   transition: transform var(--transition-base);
 }
 
+.location-badge--library {
+  background: var(--loc-library-bg);
+  color: var(--loc-library-text);
+}
+
+.location-badge--msrc {
+  background: var(--loc-msrc-bg);
+  color: var(--loc-msrc-text);
+}
+
+.location-badge--bio {
+  background: var(--loc-bio-bg);
+  color: var(--loc-bio-text);
+}
+
+.location-badge--online {
+  background: var(--loc-online-bg);
+  color: var(--loc-online-text);
+}
+
+.location-badge--clickable.location-badge--library:hover {
+  background: #4338ca;
+  border-color: var(--loc-library-bg);
+}
+
+.location-badge--clickable.location-badge--msrc:hover {
+  background: #0e7490;
+  border-color: var(--loc-msrc-bg);
+}
+
+.location-badge--clickable.location-badge--bio:hover {
+  background: #15803d;
+  border-color: var(--loc-bio-bg);
+}
+
+[data-theme="dark"] .location-badge--clickable.location-badge--library:hover {
+  background: #818cf8;
+}
+
+[data-theme="dark"] .location-badge--clickable.location-badge--msrc:hover {
+  background: #22d3ee;
+}
+
+[data-theme="dark"] .location-badge--clickable.location-badge--bio:hover {
+  background: #4ade80;
+}
+
 .location-badge--clickable:hover .location-badge__external-icon {
   transform: translate(2px, -2px);
   opacity: 1;
+}
+
+.schedule-item__location.location-text--library {
+  background: var(--loc-library-bg);
+  color: white;
+}
+
+.schedule-item__location.location-text--msrc {
+  background: var(--loc-msrc-bg);
+  color: white;
+}
+
+.schedule-item__location.location-text--bio {
+  background: var(--loc-bio-bg);
+  color: white;
+}
+
+[data-theme="dark"] .schedule-item__location.location-text--library {
+  background: #6366f1;
+}
+
+[data-theme="dark"] .schedule-item__location.location-text--msrc {
+  background: #06b6d4;
+}
+
+[data-theme="dark"] .schedule-item__location.location-text--bio {
+  background: #22c55e;
 }
 
 .location-badge--clickable {
