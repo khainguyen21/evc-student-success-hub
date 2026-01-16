@@ -1,33 +1,39 @@
 /* EVC Tutor Schedule - Enhanced Styles with Dark Mode Support */
 
 :root {
-  /* EVC Brand Colors - Light Mode */
-  --primary-color: #2d5f3f;
-  --primary-light: #3d7f5f;
-  --primary-dark: #1d4f2f;
-  --accent-green: #4a9d5f;
-  --accent-gold: #d4af37;
-  --secondary-color: #5a6c7d;
+  /* Creative 'Fresh Garden Campus' Theme - Light Mode */
+  --primary-color: #059669;        /* Vibrant EVC Green */
+  --primary-light: #34d399;        /* Fresh Mint */
+  --primary-dark: #064e3b;         /* Deep Botanical Green */
+  --accent-green: #10b981;         /* Emerald Accent */
+  --accent-gold: #f59e0b;          /* Warm Golden Sunshine */
+  --accent-blue: #0ea5e9;          /* Campus Sky Blue */
+  --secondary-color: #475569;      /* Slate Stone */
   
-  /* Light Mode Colors */
-  --background: #f5f7f9;
-  --background-secondary: #e8ecef;
-  --card-background: #ffffff;
-  --text-primary: #1a2332;
-  --text-secondary: #5a6c7d;
-  --border-color: #d1dce5;
+  /* Backgrounds & Surfaces */
+  --background: #f0fdf4;           /* Very Soft Mint Wash */
+  --background-secondary: #dcfce7; /* Soft Sage Wash */
+  --card-background: #ffffff;      /* Crisp White */
   
-  /* Accent Colors */
-  --professor-accent: #7c3aed;
-  --staff-accent: #059669;
-  --info-accent: #0ea5e9;
-  --warning-accent: #f59e0b;
+  /* Text Colors */
+  --text-primary: #0f172a;         /* Deep Midnight Slate */
+  --text-secondary: #475569;       /* Slate Stone */
   
-  /* Shadows & Effects */
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  /* Borders & Spacing */
+  --border-color: #cbd5e1;         /* Soft Stone Border */
+  
+  /* Accent Colors for Special Elements */
+  --professor-accent: #6366f1;     /* Indigo Bloom */
+  --staff-accent: #059669;         /* EVC Green */
+  --info-accent: #0284c7;          /* Sky Blue */
+  --warning-accent: #d97706;       /* Amber Amber */
+  --success-accent: #16a34a;       /* Garden Green */
+  
+  /* Shadows & Effects (Using Greenish Tints) */
+  --shadow-sm: 0 1px 2px 0 rgba(5, 150, 105, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(5, 150, 105, 0.1), 0 2px 4px -1px rgba(5, 150, 105, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(5, 150, 105, 0.15), 0 4px 6px -2px rgba(5, 150, 105, 0.08);
+  --shadow-xl: 0 20px 25px -5px rgba(5, 150, 105, 0.2), 0 10px 10px -5px rgba(5, 150, 105, 0.1);
   
   /* Border Radius */
   --radius-sm: 6px;
@@ -41,30 +47,38 @@
   --transition-slow: 350ms ease;
 }
 
-/* Dark Mode Variables */
+/* Dark Mode Variables - Creative 'Midnight Forest' Theme */
 [data-theme="dark"] {
-  --primary-color: #4a9d5f;
-  --primary-light: #5aad6f;
-  --primary-dark: #3a8d4f;
-  --accent-green: #5abd7f;
-  --accent-gold: #e4bf47;
+  --primary-color: #10b981;        /* Vibrant Emerald Green */
+  --primary-light: #34d399;        /* Soft Mint */
+  --primary-dark: #065f46;         /* Deep Forest */
+  --accent-green: #059669;         /* EVC Primary Green adjusted for dark */
+  --accent-gold: #fbbf24;          /* Soft Golden Glow */
+  --accent-blue: #38bdf8;          /* Bright Sky Blue */
+  --secondary-color: #94a3b8;      /* Slate Gray */
   
-  --background: #0f1419;
-  --background-secondary: #1a1f26;
-  --card-background: #1e2530;
-  --text-primary: #e8ecef;
-  --text-secondary: #9ca3af;
-  --border-color: #2d3748;
+  /* Backgrounds */
+  --background: #0a0f0c;           /* Very Deep Charcoal Green */
+  --background-secondary: #0f1714; /* Deep Forest Shadow */
+  --card-background: #151f1a;      /* Slate Forest Surface */
   
-  --professor-accent: #a78bfa;
-  --staff-accent: #34d399;
-  --info-accent: #38bdf8;
-  --warning-accent: #fbbf24;
+  /* Text */
+  --text-primary: #f1f5f9;         /* Off White */
+  --text-secondary: #94a3b8;       /* Muted Slate */
   
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -2px rgba(0, 0, 0, 0.4);
-  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.6), 0 10px 10px -5px rgba(0, 0, 0, 0.5);
+  /* Borders & Shadows */
+  --border-color: #24352e;         /* Deep Forest Border */
+  
+  --professor-accent: #818cf8;     /* Soft Indigo */
+  --staff-accent: #10b981;         /* Emerald */
+  --info-accent: #0ea5e9;          /* Ocean Blue */
+  --warning-accent: #f59e0b;       /* Amber */
+  --success-accent: #10b981;       /* Emerald */
+  
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.6);
+  --shadow-md: 0 4px 12px -2px rgba(0, 0, 0, 0.7);
+  --shadow-lg: 0 12px 24px -4px rgba(0, 0, 0, 0.8);
+  --shadow-xl: 0 24px 48px -12px rgba(0, 0, 0, 0.9);
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -111,6 +125,23 @@ body {
   font-size: 1rem;
   opacity: 0.95;
   font-weight: 400;
+}
+
+.header__logo-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.header__logo {
+  height: 65px;
+  width: auto;
+  filter: brightness(0) invert(1);
+  transition: all var(--transition-base);
+}
+
+[data-theme="dark"] .header__logo {
+  filter: brightness(0) invert(1);
+  opacity: 0.95;
 }
 
 /* Dark Mode Toggle */
@@ -554,6 +585,11 @@ body {
   .header__title { font-size: 1.85rem; }
   .header__subtitle { font-size: 1.1rem; }
   
+  .header__logo {
+    height: 80px;
+    width: auto;
+  }
+  
   .theme-toggle {
     top: 20px;
     right: 20px;
@@ -594,6 +630,13 @@ body {
   .header { padding: 48px 24px; }
   .header__title { font-size: 2.25rem; }
   .header__subtitle { font-size: 1.15rem; }
+  
+  .header__logo {
+    height: 90px;
+  }
+  
+  .header__logo-container {
+  }
 
   .filter {
     flex-direction: row;
