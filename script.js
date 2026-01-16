@@ -5,7 +5,6 @@ const themeToggle = document.getElementById('themeToggle');
 const themeIcon = document.querySelector('.theme-toggle__icon');
 const themeText = document.querySelector('.theme-toggle__text');
 const html = document.documentElement;
-const header = document.querySelector('.header');
 const scrollProgress = document.getElementById('scrollProgress');
 const backToTop = document.getElementById('backToTop');
 
@@ -44,13 +43,6 @@ window.addEventListener('scroll', () => {
   // Update Progress Bar
   if (scrollProgress) {
     scrollProgress.style.width = scrolled + '%';
-  }
-
-  // Header Scroll Effect
-  if (winScroll > 50) {
-    header.classList.add('scrolled');
-  } else {
-    header.classList.remove('scrolled');
   }
 
   // Back to Top Visibility

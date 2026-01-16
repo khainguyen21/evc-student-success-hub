@@ -2,45 +2,48 @@
 
 :root {
   /* Creative 'Fresh Garden Campus' Theme - Light Mode */
-  --primary-color: #059669;        /* Vibrant EVC Green */
-  --primary-light: #34d399;        /* Fresh Mint */
-  --primary-dark: #064e3b;         /* Deep Botanical Green */
-  --accent-green: #10b981;         /* Emerald Accent */
-  --accent-gold: #f59e0b;          /* Warm Golden Sunshine */
-  --accent-blue: #0ea5e9;          /* Campus Sky Blue */
-  --secondary-color: #475569;      /* Slate Stone */
-  
+  --primary-color: #059669; /* Vibrant EVC Green */
+  --primary-light: #34d399; /* Fresh Mint */
+  --primary-dark: #064e3b; /* Deep Botanical Green */
+  --accent-green: #10b981; /* Emerald Accent */
+  --accent-gold: #f59e0b; /* Warm Golden Sunshine */
+  --accent-blue: #0ea5e9; /* Campus Sky Blue */
+  --secondary-color: #475569; /* Slate Stone */
+
   /* Backgrounds & Surfaces */
-  --background: #f0fdf4;           /* Very Soft Mint Wash */
+  --background: #f0fdf4; /* Very Soft Mint Wash */
   --background-secondary: #dcfce7; /* Soft Sage Wash */
-  --card-background: #ffffff;      /* Crisp White */
-  
+  --card-background: #ffffff; /* Crisp White */
+
   /* Text Colors */
-  --text-primary: #0f172a;         /* Deep Midnight Slate */
-  --text-secondary: #475569;       /* Slate Stone */
-  
+  --text-primary: #0f172a; /* Deep Midnight Slate */
+  --text-secondary: #475569; /* Slate Stone */
+
   /* Borders & Spacing */
-  --border-color: #cbd5e1;         /* Soft Stone Border */
-  
+  --border-color: #cbd5e1; /* Soft Stone Border */
+
   /* Accent Colors for Special Elements */
-  --professor-accent: #6366f1;     /* Indigo Bloom */
-  --staff-accent: #059669;         /* EVC Green */
-  --info-accent: #0284c7;          /* Sky Blue */
-  --warning-accent: #d97706;       /* Amber Amber */
-  --success-accent: #16a34a;       /* Garden Green */
-  
+  --professor-accent: #6366f1; /* Indigo Bloom */
+  --staff-accent: #059669; /* EVC Green */
+  --info-accent: #0284c7; /* Sky Blue */
+  --warning-accent: #d97706; /* Amber Amber */
+  --success-accent: #16a34a; /* Garden Green */
+
   /* Shadows & Effects (Using Greenish Tints) */
   --shadow-sm: 0 1px 2px 0 rgba(5, 150, 105, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(5, 150, 105, 0.1), 0 2px 4px -1px rgba(5, 150, 105, 0.06);
-  --shadow-lg: 0 10px 15px -3px rgba(5, 150, 105, 0.15), 0 4px 6px -2px rgba(5, 150, 105, 0.08);
-  --shadow-xl: 0 20px 25px -5px rgba(5, 150, 105, 0.2), 0 10px 10px -5px rgba(5, 150, 105, 0.1);
-  
+  --shadow-md: 0 4px 6px -1px rgba(5, 150, 105, 0.1),
+    0 2px 4px -1px rgba(5, 150, 105, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(5, 150, 105, 0.15),
+    0 4px 6px -2px rgba(5, 150, 105, 0.08);
+  --shadow-xl: 0 20px 25px -5px rgba(5, 150, 105, 0.2),
+    0 10px 10px -5px rgba(5, 150, 105, 0.1);
+
   /* Border Radius */
   --radius-sm: 6px;
   --radius-md: 10px;
   --radius-lg: 14px;
   --radius-xl: 20px;
-  
+
   /* Transitions */
   --transition-fast: 150ms ease;
   --transition-base: 250ms ease;
@@ -49,46 +52,52 @@
 
 /* Dark Mode Variables - Creative 'Midnight Forest' Theme */
 [data-theme="dark"] {
-  --primary-color: #10b981;        /* Vibrant Emerald Green */
-  --primary-light: #34d399;        /* Soft Mint */
-  --primary-dark: #065f46;         /* Deep Forest */
-  --accent-green: #059669;         /* EVC Primary Green adjusted for dark */
-  --accent-gold: #fbbf24;          /* Soft Golden Glow */
-  --accent-blue: #38bdf8;          /* Bright Sky Blue */
-  --secondary-color: #94a3b8;      /* Slate Gray */
-  
+  --primary-color: #10b981; /* Vibrant Emerald Green */
+  --primary-light: #34d399; /* Soft Mint */
+  --primary-dark: #065f46; /* Deep Forest */
+  --accent-green: #059669; /* EVC Primary Green adjusted for dark */
+  --accent-gold: #fbbf24; /* Soft Golden Glow */
+  --accent-blue: #38bdf8; /* Bright Sky Blue */
+  --secondary-color: #94a3b8; /* Slate Gray */
+
   /* Backgrounds */
-  --background: #0a0f0c;           /* Very Deep Charcoal Green */
+  --background: #0a0f0c; /* Very Deep Charcoal Green */
   --background-secondary: #0f1714; /* Deep Forest Shadow */
-  --card-background: #151f1a;      /* Slate Forest Surface */
-  
+  --card-background: #151f1a; /* Slate Forest Surface */
+
   /* Text */
-  --text-primary: #f1f5f9;         /* Off White */
-  --text-secondary: #94a3b8;       /* Muted Slate */
-  
+  --text-primary: #f1f5f9; /* Off White */
+  --text-secondary: #94a3b8; /* Muted Slate */
+
   /* Borders & Shadows */
-  --border-color: #24352e;         /* Deep Forest Border */
-  
-  --professor-accent: #818cf8;     /* Soft Indigo */
-  --staff-accent: #10b981;         /* Emerald */
-  --info-accent: #0ea5e9;          /* Ocean Blue */
-  --warning-accent: #f59e0b;       /* Amber */
-  --success-accent: #10b981;       /* Emerald */
-  
+  --border-color: #24352e; /* Deep Forest Border */
+
+  --professor-accent: #818cf8; /* Soft Indigo */
+  --staff-accent: #10b981; /* Emerald */
+  --info-accent: #0ea5e9; /* Ocean Blue */
+  --warning-accent: #f59e0b; /* Amber */
+  --success-accent: #10b981; /* Emerald */
+
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.6);
   --shadow-md: 0 4px 12px -2px rgba(0, 0, 0, 0.7);
   --shadow-lg: 0 12px 24px -4px rgba(0, 0, 0, 0.8);
   --shadow-xl: 0 24px 48px -12px rgba(0, 0, 0, 0.9);
 }
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
   background-color: var(--background);
   color: var(--text-primary);
   line-height: 1.6;
-  transition: background-color var(--transition-base), color var(--transition-base);
+  transition: background-color var(--transition-base),
+    color var(--transition-base);
 }
 
 /* ==========================================
@@ -106,7 +115,11 @@ body {
    Base: Mobile (smaller text, less padding)
    ========================================== */
 .header {
-  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--primary-color) 0%,
+    var(--primary-dark) 100%
+  );
   color: white;
   padding: 24px 12px;
   text-align: center;
@@ -149,6 +162,7 @@ body {
   position: absolute;
   top: 16px;
   right: 16px;
+  z-index: 2;
   background: rgba(255, 255, 255, 0.2);
   border: 2px solid rgba(255, 255, 255, 0.3);
   border-radius: var(--radius-lg);
@@ -194,6 +208,14 @@ body {
   /* align-items: flex-end; */
 }
 
+ .filter {
+  position: sticky;
+  top: 4px;
+  z-index: 999;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+ }
+
 .filter__group {
   display: flex;
   flex-direction: column;
@@ -226,6 +248,31 @@ body {
   margin-top: 8px;
 }
 
+@media (max-width: 1156px) {
+  .filter {
+    padding: 10px 12px;
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+
+  .filter__group {
+    gap: 3px;
+  }
+
+  .filter__label {
+    font-size: 0.75rem;
+  }
+
+  .filter__select {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+  }
+
+  .filter__note {
+    margin-top: 2px;
+  }
+}
+
 /* ==========================================
    BLOCK: schedule
    ========================================== */
@@ -247,7 +294,11 @@ body {
 }
 
 .subject__title {
-  background: linear-gradient(90deg, var(--primary-color) 0%, var(--primary-light) 100%);
+  background: linear-gradient(
+    90deg,
+    var(--primary-color) 0%,
+    var(--primary-light) 100%
+  );
   color: white;
   padding: 14px 18px;
   font-size: 1.1rem;
@@ -276,7 +327,11 @@ body {
 }
 
 .info-section__header {
-  background: linear-gradient(90deg, var(--accent-green) 0%, var(--primary-color) 100%);
+  background: linear-gradient(
+    90deg,
+    var(--accent-green) 0%,
+    var(--primary-color) 100%
+  );
   color: white;
   padding: 16px 20px;
   display: flex;
@@ -368,7 +423,11 @@ body {
 }
 
 .info-section__highlight {
-  background: linear-gradient(135deg, var(--accent-green) 0%, var(--primary-color) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--accent-green) 0%,
+    var(--primary-color) 100%
+  );
   color: white;
   padding: 20px;
   border-radius: var(--radius-md);
@@ -568,7 +627,9 @@ body {
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
   padding: 14px;
-  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), box-shadow var(--transition-base), border-color var(--transition-base);
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow var(--transition-base), border-color var(--transition-base);
   box-shadow: var(--shadow-sm);
 }
 
@@ -579,48 +640,7 @@ body {
 
 /* Sticky Header enhancement */
 .header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  transition: all var(--transition-base);
-}
-
-.header.scrolled {
-  padding: 10px 24px;
-  background: rgba(0, 106, 78, 0.9); /* EVC Primary with transparency */
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  box-shadow: var(--shadow-md);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 15px;
-}
-
-.header.scrolled .header__logo-container {
-  margin-bottom: 0;
-}
-
-.header.scrolled .header__logo {
-  height: 40px;
-}
-
-.header.scrolled .header__title {
-  font-size: 1.2rem;
-  margin: 0;
-}
-
-.header.scrolled .header__subtitle {
-  display: none;
-}
-
-.header.scrolled .theme-toggle {
-  position: static;
-  padding: 6px 12px;
-}
-
-[data-theme="dark"] .header.scrolled {
-  background: rgba(10, 40, 30, 0.9);
+  position: relative;
 }
 
 .tutor-card:hover {
@@ -630,8 +650,12 @@ body {
 }
 
 /* Modifiers */
-.tutor-card--professor { border-left: 4px solid var(--professor-accent); }
-.tutor-card--staff { border-left: 4px solid var(--staff-accent); }
+.tutor-card--professor {
+  border-left: 4px solid var(--professor-accent);
+}
+.tutor-card--staff {
+  border-left: 4px solid var(--staff-accent);
+}
 
 /* Elements */
 .tutor-card__name {
@@ -720,25 +744,36 @@ body {
    RESPONSIVE - Tablet (min-width: 768px)
    ========================================== */
 @media (min-width: 768px) {
-  .container { padding: 0 0; }
-  .header { padding: 40px 20px; }
-  .header__title { font-size: 1.85rem; }
-  .header__subtitle { font-size: 1.1rem; }
-  
+  .container {
+    padding: 0 0;
+  }
+  .header {
+    padding: 40px 20px;
+  }
+  .header__title {
+    font-size: 1.85rem;
+  }
+  .header__subtitle {
+    font-size: 1.1rem;
+  }
+
   .header__logo {
     height: 80px;
     width: auto;
   }
-  
+
   .theme-toggle {
     top: 20px;
     right: 20px;
     padding: 10px 16px;
     font-size: 0.9rem;
   }
-  
-  .subject__title { padding: 16px 20px; font-size: 1.25rem; }
-  .tutor-card { 
+
+  .subject__title {
+    padding: 16px 20px;
+    font-size: 1.25rem;
+  }
+  .tutor-card {
     margin: 5px auto;
   }
 
@@ -752,12 +787,14 @@ body {
     align-items: center;
   }
 
-  .schedule-item__location { justify-self: center; }
-  
+  .schedule-item__location {
+    justify-self: center;
+  }
+
   .info-section__requirements {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .info-section__content {
     padding: 24px;
   }
@@ -767,10 +804,16 @@ body {
    RESPONSIVE - Desktop (min-width: 1025px)
    ========================================== */
 @media (min-width: 1157px) {
-  .header { padding: 48px 24px; }
-  .header__title { font-size: 2.25rem; }
-  .header__subtitle { font-size: 1.15rem; }
-  
+  .header {
+    padding: 48px 24px;
+  }
+  .header__title {
+    font-size: 2.25rem;
+  }
+  .header__subtitle {
+    font-size: 1.15rem;
+  }
+
   .header__logo {
     height: 90px;
   }
@@ -778,6 +821,29 @@ body {
   .filter {
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  .filter {
+    padding: 20px;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  .filter__group {
+    gap: 6px;
+  }
+
+  .filter__label {
+    font-size: 0.875rem;
+  }
+
+  .filter__select {
+    padding: 10px 14px;
+    font-size: 1rem;
+  }
+
+  .filter__note {
+    margin-top: 8px;
   }
 
   .filter__group {
@@ -789,20 +855,20 @@ body {
   .subject__cards {
     grid-template-columns: repeat(3, 1fr);
   }
-  
+
   .info-section__requirements {
     grid-template-columns: repeat(3, 1fr);
   }
-  
+
   .info-section__content {
     padding: 28px;
   }
-  
+
   .info-section__list {
     column-count: 2;
     column-gap: 20px;
   }
-  
+
   .info-section__list-item {
     break-inside: avoid;
   }
