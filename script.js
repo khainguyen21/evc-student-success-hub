@@ -5,6 +5,9 @@ const themeToggle = document.getElementById('themeToggle');
 const themeIcon = document.querySelector('.theme-toggle__icon');
 const themeText = document.querySelector('.theme-toggle__text');
 const html = document.documentElement;
+const header = document.querySelector('.header');
+const scrollProgress = document.getElementById('scrollProgress');
+const backToTop = document.getElementById('backToTop');
 
 // Check for saved theme preference or default to 'light'
 const currentTheme = localStorage.getItem('theme') || 'light';
@@ -32,7 +35,41 @@ function updateThemeButton(theme) {
   }
 }
 
-// Smooth scroll for anchor links (if any are added later)
+// Scroll Event Handlers
+window.addEventListener('scroll', () => {
+  const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  const scrolled = (winScroll / height) * 100;
+
+  // Update Progress Bar
+  if (scrollProgress) {
+    scrollProgress.style.width = scrolled + '%';
+  }
+
+  // Header Scroll Effect
+  if (winScroll > 50) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+
+  // Back to Top Visibility
+  if (winScroll > 300) {
+    backToTop.classList.add('visible');
+  } else {
+    backToTop.classList.remove('visible');
+  }
+});
+
+// Back to Top Click
+backToTop.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+
+// Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
@@ -46,28 +83,28 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// Add animation on scroll for info sections
+// Intersection Observer for scroll animations
 const observerOptions = {
-  threshold: 0.01,
+  threshold: 0.1,
   rootMargin: '0px 0px -50px 0px'
 };
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry, index) => {
     if (entry.isIntersecting) {
-      entry.target.style.opacity = '1';
-      entry.target.style.transform = 'translateY(0)';
+      // Add a slight delay for staggered effect
+      setTimeout(() => {
+        entry.target.classList.add('visible');
+      }, index * 50);
+      revealObserver.unobserve(entry.target);
     }
   });
 }, observerOptions);
 
-// Observe info sections for scroll animations
-document.querySelectorAll('.info-section').forEach(section => {
-  section.style.opacity = '0';
-  section.style.transform = 'translateY(20px)';
-  section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-  observer.observe(section);
+// Observe info sections and tutor cards
+document.querySelectorAll('.info-section, .tutor-card').forEach(el => {
+  revealObserver.observe(el);
 });
 
-// Log theme changes for debugging (can be removed in production)
+// Log theme changes
 console.log('EVC Tutor Schedule loaded with theme:', currentTheme);

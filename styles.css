@@ -507,13 +507,120 @@ body {
    Base: Mobile (smaller padding)
    ========================================== */
 
+/* Scroll Progress Bar */
+.scroll-progress-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: transparent;
+  z-index: 1001;
+}
+
+.scroll-progress-bar {
+  height: 100%;
+  background: var(--accent-gold);
+  width: 0%;
+  transition: width 0.1s ease;
+  box-shadow: 0 0 10px var(--accent-gold);
+}
+
+/* Back to Top Button */
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  box-shadow: var(--shadow-md);
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition-base);
+  z-index: 999;
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.back-to-top:hover {
+  background: var(--primary-light);
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Scroll reveal for tutor cards */
 .tutor-card {
+  opacity: 0;
+  transform: translateY(30px);
   background: var(--card-background);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
   padding: 14px;
-  transition: all var(--transition-base);
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), box-shadow var(--transition-base), border-color var(--transition-base);
   box-shadow: var(--shadow-sm);
+}
+
+.tutor-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Sticky Header enhancement */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: all var(--transition-base);
+}
+
+.header.scrolled {
+  padding: 10px 24px;
+  background: rgba(0, 106, 78, 0.9); /* EVC Primary with transparency */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: var(--shadow-md);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.header.scrolled .header__logo-container {
+  margin-bottom: 0;
+}
+
+.header.scrolled .header__logo {
+  height: 40px;
+}
+
+.header.scrolled .header__title {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.header.scrolled .header__subtitle {
+  display: none;
+}
+
+.header.scrolled .theme-toggle {
+  position: static;
+  padding: 6px 12px;
+}
+
+[data-theme="dark"] .header.scrolled {
+  background: rgba(10, 40, 30, 0.9);
 }
 
 .tutor-card:hover {
